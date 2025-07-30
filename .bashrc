@@ -27,6 +27,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias pacman-clean="sudo pacman -Rns $(pacman -Qdtq)"
 
 #ENTER MESSAGE
 
@@ -37,3 +38,5 @@ Let's get some work done today
 It's $(date)
 ==============================================
 EOF
+
+GTK_THEME=Adwaita:dark
