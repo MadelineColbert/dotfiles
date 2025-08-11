@@ -28,6 +28,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias pacman-clean="sudo pacman -Rns $(pacman -Qdtq)"
+alias start_conda="source /home/madeline/anaconda3/bin/activate"
 
 #ENTER MESSAGE
 
