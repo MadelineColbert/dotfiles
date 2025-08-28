@@ -19,7 +19,7 @@ unset command_not_found_handle
 eval "$(starship init bash)"
 
 #ALIASES
-alias maddiegit="git config --global user.email madeline.r.colbert@gmail.com && git config --global user.name \"Madeline Colbert\""
+alias maddiegit="git config --global user.email madeline.r.colbert+eglrsaf4@gmail.com && git config --global user.name \"MadelineColbert\""
 alias mattgit="git config --global user.email colbertmatt12+6ymv9vew@gmail.com && git config --global user.name \"MattColb\""
 alias gituser="git config --global user.email && git config --global user.name"
 alias celar="clear"
@@ -29,6 +29,11 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias pacman-clean="sudo pacman -Rns $(pacman -Qdtq)"
 alias start_conda="source /home/madeline/anaconda3/bin/activate"
+
+alias emhome="cd /mnt/c/users/madel"
+
+
+alias cmake_build="mkdir build && cd build && cmake .. && make"
 
 #ENTER MESSAGE
 
@@ -57,3 +62,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/madeline/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/madeline/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
