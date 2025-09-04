@@ -18,6 +18,10 @@ unset command_not_found_handle
 #Starship Prompt:
 eval "$(starship init bash)"
 
+#NVIDIA
+export PATH=${PATH}:/usr/local/cuda-13.0/bin
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-13.0/lib64
+
 #ALIASES
 alias maddiegit="git config --global user.email madeline.r.colbert+eglrsaf4@gmail.com && git config --global user.name \"MadelineColbert\""
 alias mattgit="git config --global user.email colbertmatt12+6ymv9vew@gmail.com && git config --global user.name \"MattColb\""
@@ -32,7 +36,8 @@ alias start_conda="source /home/madeline/anaconda3/bin/activate"
 alias emhome="cd /mnt/c/users/madel"
 
 
-alias cmake_build="mkdir build && cd build && cmake .. && make"
+alias cmake_reset="cd .. && rm -fr build"
+alias cmake_build="rm -fr build && mkdir build && cd build && cmake .. && make"
 
 #ENTER MESSAGE
 
