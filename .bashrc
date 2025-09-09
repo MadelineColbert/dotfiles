@@ -8,15 +8,11 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-. "$HOME/.cargo/env"
 alias l="ls -al --color=auto"
 
 shopt -s histappend
 shopt -s autocd
 unset command_not_found_handle
-
-#Starship Prompt:
-eval "$(starship init bash)"
 
 #NVIDIA
 export PATH=${PATH}:/usr/local/cuda-13.0/bin
@@ -50,34 +46,3 @@ It's $(date)
 EOF
 
 GTK_THEME=Adwaita:dark
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/madeline/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/madeline/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/madeline/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/madeline/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-case ":$PATH:" in
-    *:/home/madeline/.juliaup/bin:*)
-        ;;
-
-    *)
-        export PATH=/home/madeline/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-
-# <<< juliaup initialize <<<
