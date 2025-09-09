@@ -7,8 +7,19 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
 alias l="ls -al --color=auto"
+
+test -f ~/git-prompt.sh && . ~/git-prompt.sh
+
+# Then, set the options as desired. Remember that the current
+# branch name is displayed no matter what.
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWUPSTREAM="auto"
+
+# Finally, add $(__git_ps1) to the prompt variable. That's it!
+PS1="\h @ \w\$(__git_ps1) \$ "
 
 shopt -s histappend
 shopt -s autocd
