@@ -9,6 +9,8 @@
 
 source ~/.bash_git
 
+. "$HOME/.cargo/env"
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias l="ls -al --color=auto"
@@ -36,3 +38,4 @@ export PATH=${PATH}:/usr/local/cuda-13.0/bin
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-13.0/lib64
 
 GTK_THEME=Adwaita:dark
+. "$HOME/.cargo/env"

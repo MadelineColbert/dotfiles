@@ -12,14 +12,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias start_conda="source /home/madeline/anaconda3/bin/activate"
-
-alias emhome="cd /mnt/c/users/madel"
-
 
 alias cmake_reset="cd .. && rm -fr build"
 alias cmake_build="rm -fr build && mkdir build && cd build && cmake .. && make"
 alias tmux_notes="cat ~/dotfiles/tmux_notes.md"
+
+alias python="python3"
 
 #ENTER MESSAGE
 

@@ -1,5 +1,9 @@
 sudo apt-get install vim curl tmux git
 
+# Install Packages
+# Make Simlinks
+# Setup any other useful factors
+
 # Remove files that are there
 rm -fr ~/.bashrc
 rm -fr ~/.bash_aliases
