@@ -39,3 +39,21 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-13.0/lib64
 
 GTK_THEME=Adwaita:dark
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/madeline/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/madeline/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/madeline/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/madeline/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
