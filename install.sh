@@ -1,5 +1,3 @@
-sudo apt-get install vim curl tmux git
-
 # Install Packages
 # Make Simlinks
 # Setup any other useful factors
@@ -10,9 +8,11 @@ rm -fr ~/.bash_aliases
 rm -fr ~/.gitconfig
 rm -fr ~/.tmux.conf
 rm -fr ~/.vimrc
+rm -fr ~/.bash_git
 
 ln -s ~/dotfiles/.bashrc ~/
 ln -s ~/dotfiles/.bash_aliases ~/
 ln -s ~/dotfiles/.gitconfig ~/
 ln -s ~/dotfiles/.tmux.conf ~/
 ln -s ~/dotfiles/.vimrc ~/
+ln -s ~/dotfiles/.bash_git ~/
