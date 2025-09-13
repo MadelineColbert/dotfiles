@@ -17,6 +17,8 @@ alias cmake_reset="cd .. && rm -fr build"
 alias cmake_build="rm -fr build && mkdir build && cd build && cmake .. && make"
 alias tmux_notes="cat ~/dotfiles/tmux_notes.md"
 
+alias c="clear"
+
 alias python="python3"
 
 #ENTER MESSAGE
